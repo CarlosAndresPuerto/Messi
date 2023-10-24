@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Detalles de la tarea:</h1>
+    <h1>{{ task.title }}</h1>
+    <p>{{ task.description }}</p>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.title.label_tag }} {{ form.title }}
+        <br>
+        {{ form.description.label_tag }} {{ form.description }}
+        <br>
+        {{ form.done.label_tag }} {{ form.done }}
+        <br>
+        <button type="submit">Actualizar Tarea</button>
+    </form>
+{% endblock %}
