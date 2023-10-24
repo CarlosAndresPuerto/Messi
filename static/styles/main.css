@@ -1,0 +1,28 @@
+
+body {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.navbar{
+    background: #BCF9A0 ;
+    padding: 20px 50px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+}
+
+.navbar ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color:aqua
+}

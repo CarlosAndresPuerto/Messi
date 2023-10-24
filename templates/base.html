@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capacitaciones</title>
+    <link rel="stylesheet" href="{% static '/styles/main.css' %}">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="{% url 'home' %}">Index</a>
+            </li>
+
+            {% if user.is_authenticated %}
+            <li>
+                <a href="{% url 'projects' %}">Proyectos</a>
+            </li>
+            <li>
+                <a href="{% url 'tasks' %}">Tareas</a>
+            </li>
+
+            <li>
+                <a href="{% url 'create_task' %}">Crear tarea</a>
+            </li>
+
+            <li>
+                <a href="{% url 'create_project' %}">Crear proyecto</a>
+            </li>
+            <li>
+                <a href="{% url 'logout' %}">Cerrar sesión</a>
+            </li>
+            {% else %}
+
+            <li>
+                <a href="{% url 'registro' %}">Registro</a>
+            </li>
+            <li>
+                <a href="{% url 'login' %}">Iniciar Sesión</a>
+            </li>
+
+            {% endif %}
+
+ 
+
+
+        </ul>
+    </nav>
+    {% block content %}
+    {% endblock %}
+    
+</body>
+</html>
