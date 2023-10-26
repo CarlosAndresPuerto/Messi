@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Crear nueva tarea</h1>
+
+<form method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    {{form.project_id}}
+    <button>
+        save
+    </button>
+</form>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.archivo_entrega.label_tag }}
+    {{ form.archivo_entrega }}
+    <button type="submit">Enviar Entrega</button>
+</form>
+
+{% endblock %}
