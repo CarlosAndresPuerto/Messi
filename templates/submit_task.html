@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Enviar Tarea - {{ task.title }}</h1>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Enviar Tarea</button>
+  </form>
+
+  {% if entrega %}
+  {{ entrega }}  <!-- Puedes agregar esto para depurar -->
+  {% if not entrega.confirmada %}
+      <form method="post" action="{% url 'confirmar_entrega' entrega.id %}">
+          {% csrf_token %}
+          <button type="submit">Confirmar Entrega</button>
+      </form>
+  {% endif %}
+{% endif %}
+{% endblock %}
