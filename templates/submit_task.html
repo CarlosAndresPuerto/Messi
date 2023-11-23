@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Enviar Tarea - {{ task.title }}</h1>
+  <form method="post" enctype="multipart/form-data" action="{% url 'submit_task' task_id=task.id %}">
+    {% csrf_token %}
+
+    {{ form.non_field_errors }}
+    
+    {# Renderizar campos del formulario manualmente #}
+    <div>{{ form.entregada }}</div>
+    <div>{{ form.comentarios }}</div>
+    <div>{{ form.archivos_adjuntos }}</div>
+
+    <button type="submit">Enviar Tarea</button>
+  </form>
+{% endblock %}
