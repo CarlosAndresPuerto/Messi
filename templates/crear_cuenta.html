@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Este es el registro -->
+
+    <h1>
+        Registro
+    </h1>
+
+    {% if form.errors %}
+        <div class="alert alert-danger">
+            {{ form.errors }}
+        </div>
+    {% endif %}
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.non_field_errors }}
+
+        <label for="{{ form.first_name.id_for_label }}">Nombre:</label>
+        {{ form.first_name }}
+        <br>
+
+        <label for="{{ form.last_name.id_for_label }}">Apellido:</label>
+        {{ form.last_name }}
+        <br>
+
+        <label for="{{ form.identity.id_for_label }}">Número de documento:</label>
+        {{ form.identity }}
+        <br>
+
+        <label for="{{ form.email.id_for_label }}">Correo electrónico:</label>
+        {{ form.email }}
+        <br>
+
+        <label for="{{ form.password1.id_for_label }}">Contraseña:</label>
+        {{ form.password1 }}
+        <br>
+
+        <label for="{{ form.password2.id_for_label }}">Confirmar contraseña:</label>
+        {{ form.password2 }}
+        <br>
+
+        <label for="{{ form.is_teacher.id_for_label }}">Soy profesor:</label>
+        {{ form.is_teacher }}
+        <br>
+
+        {% if form.is_teacher.value %}
+            <label for="{{ form.teacher_password.id_for_label }}">Contraseña de profesor:</label>
+            {{ form.teacher_password }}
+            <br>
+        {% endif %}
+
+        <button type="submit">
+            Registrarse
+        </button>
+    </form>
+</html>
+
+{% endblock %}

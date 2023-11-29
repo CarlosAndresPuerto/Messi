@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1>Perfil de {{ user.username }}</h1>
+
+    {% if user.is_teacher %}
+        <p>Rol: Profesor</p>
+        {# Mostrar información específica del profesor si es necesario #}
+    {% elif user.is_student %}
+        <p>Rol: Estudiante</p>
+        {# Mostrar información específica del estudiante si es necesario #}
+    {% endif %}
+
+    <p>Nombre: {{ user.first_name }} {{ user.last_name }}</p>
+    <p>Correo electrónico: {{ user.email }}</p>
+
+    {# Otras informaciones específicas de usuario si es necesario #}
+
+</html>
+
+{% endblock %}
