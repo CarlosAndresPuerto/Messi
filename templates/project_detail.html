@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
+<h1>Projects Detail</h1>
+
+<h1>{{ project.name }}</h1>
+<p>{{ project.description }}</p>
+
+<h2>Tareas vinculadas:</h2>
+<ul>
+    {% for task in tasks %}
+        <a href="{% url 'task_detail' task.id %}">{{ task.title }}</a>
+    {% endfor %}
+    <a href="{% url 'create_task' %}">Crear Tarea</a>
+</ul>
+
+{% endblock %}
+
