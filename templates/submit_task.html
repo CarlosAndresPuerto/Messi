@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+  <h1>Enviar Tarea - {{ task.title }}</h1>
+
+  <form id="taskSubmissionForm" method="post" enctype="multipart/form-data" action="{% url 'submit_task' task_id=task.id %}">
+    {% csrf_token %}
+
+    {{ form.non_field_errors }}
+    <div class="mb-3">{{ form.comentarios.label_tag }} {{ form.comentarios }}</div>
+    <div class="mb-3">{{ form.archivos_adjuntos.label_tag }} {{ form.archivos_adjuntos }}</div>
+    <div class="mb-3">{{ form.calificacion.label_tag }} {{ form.calificacion }}</div>
+
+    <input type="hidden" name="action" value="enviar"> {# Campo oculto para la acción #}
+
+    <div class="mb-3">
+      <label>
+        {{ form.confirmar_entrega }} Confirmar Entrega
+      </label>
+    </div>
+
+    {% if not entrega or not entrega.anulada %}
+      <button type="submit" class="btn btn-primary" id="enviarBtn">Enviar Tarea</button>
+    {% endif %}
+  </form>
+
+  {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if entrega %}
+    {% if entrega.entregada and not entrega.anulada %}
+      <!-- Muestra detalles de entrega si ya se ha enviado -->
+      <div class="mt-4">
+        <p>Detalles de la Entrega:</p>
+        <p>Fecha de entrega: {{ entrega.fecha_entrega }}</p>
+        <p>Comentarios: {{ entrega.comentarios }}</p>
+        {% if entrega.archivos_adjuntos %}
+          <p>Archivos Adjuntos: <a href="{{ entrega.archivos_adjuntos.url }}" target="_blank">Ver Archivo Adjunto</a></p>
+        {% else %}
+          <p>No se adjuntaron archivos.</p>
+        {% endif %}
+
+        <!-- Permitir anular la entrega -->
+        <form method="post" action="{% url 'anular_entrega' task_id=task.id %}">
+          {% csrf_token %}
+          <button type="submit" class="btn btn-danger" {% if not entrega.entregada %}disabled{% endif %}>Anular Entrega</button>
+        </form>
+
+        {% if entrega.calificacion %}
+          <p>Calificación: {{ entrega.calificacion }}/100</p>
+        {% endif %}
+      </div>
+    {% endif %}
+  {% endif %}
+
+  {% with entrega_entregada=entrega.entregada|yesno:"true,false" %}
+  <script>
+    var entregaEntregada = "{{ entrega_entregada }}";
+  
+    document.addEventListener("DOMContentLoaded", function () {
+      var form = document.getElementById("taskSubmissionForm");
+      var enviarBtn = document.getElementById("enviarBtn");
+      var anularBtn = document.getElementById("anularBtn");
+
+      if (entregaEntregada === "true" && !anuladoPorEstudiante()) {
+        // Entrega realizada y no anulada, deshabilitar la edición
+        var elements = form.elements;
+        for (var i = 0; i < elements.length; i++) {
+          elements[i].setAttribute("readonly", "readonly");
+        }
+
+        enviarBtn.setAttribute("disabled", "disabled");
+        {% if entrega.calificacion %}
+          document.getElementById("id_calificacion").setAttribute("readonly", "readonly");
+        {% endif %}
+
+        anularBtn.addEventListener("click", function () {
+          // Lógica para anular la entrega
+          // Puedes realizar aquí las operaciones necesarias para anular la entrega
+          // Después de anularla, habilita la edición y el botón de enviar
+          habilitarEdicion();
+        });
+      }
+
+      function habilitarEdicion() {
+        var elements = form.elements;
+        for (var i = 0; i < elements.length; i++) {
+          elements[i].removeAttribute("readonly");
+        }
+
+        enviarBtn.removeAttribute("disabled");
+      }
+    });
+
+    function anuladoPorEstudiante() {
+      // Lógica para determinar si el estudiante ha anulado la entrega
+      // Puedes adaptar esta función según cómo determines el estado de anulación
+      // Por ejemplo, puedes tener un campo en tu modelo de entrega que indique si fue anulado
+      // o puedes verificar si hay una acción específica realizada por el estudiante en tu sistema.
+      // Aquí uso una función de ejemplo que deberías reemplazar con la lógica real.
+      return true; // Reemplazar con tu lógica real
+    }
+  </script>
+  {% endwith %}
+</div>
+{% endblock %}
