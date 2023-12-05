@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <h1 class="mt-4">Tareas</h1>
+
+  {% if tasks %}
+    <ul class="list-group">
+      {% for task in tasks %}
+        <li class="list-group-item">
+          <h2 class="mb-0"><a href="{% url 'task_detail' task.id %}">{{ task.title }}</a></h2>
+          <p class="mb-1">{{ task.description }}</p>
+          <small class="text-muted">
+            Fecha de finalización: {{ task.deadline|date:"Y-m-d" }} | 
+            {{ task.deadline|time:"H:i:s" }}
+          </small>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No hay tareas asignadas.</p>
+  {% endif %}
+</div>
+{% endblock %}
+

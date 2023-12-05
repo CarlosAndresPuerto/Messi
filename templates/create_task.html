@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+    <h1>Crear nueva tarea</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        {{ form.project_id }}
+        <button type="submit" class="btn btn-primary">
+            Guardar
+        </button>
+    </form>
+</div>
+
+{% endblock %}
