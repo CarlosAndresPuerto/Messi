@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% if user_type == 'profesor' %}
+        <h1>Bienvenido psicologo, {{ user.first_name }} {{ user.last_name }}</h1>
+        <p>Has iniciado sesión con éxito en tu perfil.</p>
+    {% elif user_type == 'estudiante' %}
+        <p>Bienvenido Estudiante, {{ user.first_name }} {{ user.last_name }}</p>
+    {% endif %}
+{% endblock %}

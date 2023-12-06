@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Vista completa de la altura del viewport */
+}
+
+.container {
+    flex: 1; /* Hace que este div ocupe todo el espacio restante en la vista */
+}
+
+.footer {
+    margin-top: auto; /* Empuja el pie de página hacia abajo */
+}
