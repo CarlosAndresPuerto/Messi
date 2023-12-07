@@ -1,0 +1,10 @@
+imagen {
+    background-image: url('../pxfuel.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 150px; /* establece el ancho de la imagen en 300 píxeles */
+    height: 200px;
+    background-position: 50% 50%; /* Centra la imagen horizontal y verticalmente */
+
+  }
+  

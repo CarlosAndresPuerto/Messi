@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <h2>Iniciar Sesión</h2>
+
+  <form method="post" class="login-form">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <button type="submit">Iniciar Sesión</button>
+  </form>
+
+  {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+{% endblock %}
