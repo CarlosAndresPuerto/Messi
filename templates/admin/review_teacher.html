@@ -1,8 +1,0 @@
-<!-- En templates/admin/review_teacher.html -->
-<h2>Revisión de Profesor</h2>
-<p>{{ user.username }} - {{ user.email }}</p>
-
-<form method="post">
-    {% csrf_token %}
-    <button type="submit" name="approve">Aprobar como Profesor</button>
-</form>
