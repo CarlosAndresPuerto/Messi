@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="card shadow p-4 rounded">
+        <h1 class="card-title text-success text-center mb-4" style="font-family: 'Roboto', sans-serif;">Detalles de la Tarea</h1>
+
+        <h2 class="h4">{{ task.title }}</h2>
+        <p class="lead">{{ task.description }}</p>
+
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+
+            <div class="mb-3">
+                <label for="{{ form.title.id_for_label }}" class="form-label"><strong>{{ form.title.label }}</strong></label>
+                {{ form.title }}
+            </div>
+
+            <div class="mb-3">
+                <label for="{{ form.description.id_for_label }}" class="form-label"><strong>{{ form.description.label }}</strong></label>
+                {{ form.description }}
+            </div>
+
+            <div class="mb-3">
+                <label for="{{ form.deadline.id_for_label }}" class="form-label"><strong>{{ form.deadline.label }}</strong></label>
+                {{ form.deadline }}
+            </div>
+
+            <div class="mb-3">
+                <div class="form-check">
+                    {{ form.done }}
+                    <label class="form-check-label" for="{{ form.done.id_for_label }}">
+                        <strong>{{ form.done.label }}</strong>
+                    </label>
+                </div>
+            </div>
+
+            {% if task.archivos_adjuntos %}
+                <h3 class="h5 mt-3"><strong>Archivo Adjunto Actual:</strong></h3>
+                <p>{{ task.archivos_adjuntos.name }}</p>
+                <a href="{% url 'delete_task_attachment' task.id %}" class="btn btn-danger"><i class="fas fa-trash"></i> Eliminar Archivo Adjunto</a>
+            {% endif %}
+
+            <div class="mb-3">
+                <label for="{{ form.archivos_adjuntos.id_for_label }}" class="form-label"><strong>{{ form.archivos_adjuntos.label }}</strong></label>
+                {{ form.archivos_adjuntos }}
+            </div>
+
+            <button type="submit" class="btn btn-success btn-lg mx-auto d-block"><i class="fas fa-save"></i> Actualizar Tarea</button>
+        </form>
+    </div>
+</div>
+
+<style>
+    .card {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #f8f9fa; 
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+        border-color: #dc3545;
+    }
+
+    .btn-danger:hover {
+        background-color: #c82333;
+        border-color: #c82333;
+    }
+
+    .btn-success {
+        background-color: #28a745;
+        border-color: #28a745;
+    }
+
+    .btn-success:hover {
+        background-color: #218838;
+        border-color: #218838;
+    }
+</style>
+
+{% endblock %}
