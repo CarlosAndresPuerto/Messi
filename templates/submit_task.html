@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="card shadow p-4 rounded" style="max-width: 600px; background-color: #f8f9fa;">
+        <h1 class="h4 mb-4 text-success text-center" style="font-family: 'Roboto', sans-serif;">Enviar Tarea - {{ task.title }}</h1>
+
+        <form id="taskSubmissionForm" method="post" enctype="multipart/form-data" action="{% url 'submit_task' task_id=task.id %}">
+            {% csrf_token %}
+
+            {{ form.non_field_errors }}
+            <div class="mb-3">
+                <label for="{{ form.comentarios.id_for_label }}" class="form-label">{{ form.comentarios.label_tag }}</label>
+                {{ form.comentarios }}
+            </div>
+            <div class="mb-3">
+                <label for="{{ form.archivos_adjuntos.id_for_label }}" class="form-label">{{ form.archivos_adjuntos.label_tag }}</label>
+                {{ form.archivos_adjuntos }}
+            </div>
+            <div class="mb-3">
+                <label for="{{ form.calificacion.id_for_label }}" class="form-label">{{ form.calificacion.label_tag }}</label>
+                {{ form.calificacion }}
+            </div>
+
+            <input type="hidden" name="action" value="enviar"> {# Campo oculto para la acción #}
+
+            {% if not entrega or not entrega.anulada %}
+                <button type="submit" class="btn btn-success mx-auto d-block" id="enviarBtn">
+                    <i class="fas fa-paper-plane mr-2"></i> Enviar Tarea
+                </button>
+            {% endif %}
+        </form>
+
+        {% if messages %}
+            <ul class="messages list-unstyled mt-3">
+                {% for message in messages %}
+                    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        {% if entrega %}
+            {% if entrega.entregada and not entrega.anulada %}
+                <!-- Muestra detalles de entrega si ya se ha enviado -->
+                <div class="mt-4">
+                    <h2 class="h5 mb-3 text-success">Detalles de la Entrega</h2>
+                    <p class="mb-1"><strong>Fecha de entrega:</strong> {{ entrega.fecha_entrega }}</p>
+                    {% if entrega.comentarios %}
+                        <p class="mb-1"><strong>Comentarios del Estudiante:</strong> {{ entrega.comentarios }}</p>
+                    {% endif %}
+                    {% if entrega.comentarios_profesor %}
+                        <p class="mb-1"><strong>Comentarios del Profesor:</strong> {{ entrega.comentarios_profesor }}</p>
+                    {% endif %}
+                    {% if entrega.archivos_adjuntos %}
+                        <p class="mb-1"><strong>Archivos Adjuntos:</strong> <a href="{{ entrega.archivos_adjuntos.url }}" target="_blank">Ver Archivo Adjunto</a></p>
+                        <button type="button" class="btn btn-danger btn-sm" onclick="anularEntrega()">Anular Entrega</button>
+                    {% else %}
+                        <p class="mb-1"><strong>No se adjuntaron archivos.</strong></p>
+                    {% endif %}
+
+                    {% if entrega.calificacion %}
+                        <p class="mb-1"><strong>Calificación:</strong> {{ entrega.calificacion }}/100</p>
+                        <script>
+                            document.getElementById("id_calificacion").setAttribute("readonly", "readonly");
+                        </script>
+                    {% endif %}
+                </div>
+            {% endif %}
+        {% endif %}
+    </div>
+
+    <style>
+        .card {
+            margin: 0 auto;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .btn-success {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+
+        .btn-success:hover {
+            background-color: #218838;
+            border-color: #218838;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+        }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+            border-color: #c82333;
+        }
+
+        .form-label {
+            font-weight: bold;
+        }
+
+        .messages {
+            font-size: 0.9rem;
+            color: #007bff;
+        }
+
+        h2 {
+            color: #28a745;
+        }
+    </style>
+
+    <script>
+        function anularEntrega() {
+            if (confirm("¿Seguro que quieres anular la entrega?")) {
+                document.getElementById("id_archivos_adjuntos").value = "";
+                document.getElementById("taskSubmissionForm").submit();
+            }
+        }
+    </script>
+</div>
+{% endblock %}
