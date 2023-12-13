@@ -1,0 +1,449 @@
+2023-12-12 09:43:45,497 [INFO] - Watching for file changes with StatReloader
+2023-12-12 22:34:57,576 [ERROR] - Internal Server Error: /core/create_project/
+Traceback (most recent call last):
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view core.views.create_project didn't return an HttpResponse object. It returned None instead.
+2023-12-12 22:36:41,302 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py changed, reloading.
+2023-12-12 22:36:46,455 [INFO] - Watching for file changes with StatReloader
+2023-12-12 22:39:46,601 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py changed, reloading.
+2023-12-12 22:39:54,350 [INFO] - Watching for file changes with StatReloader
+2023-12-12 23:50:37,630 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py changed, reloading.
+2023-12-12 23:50:47,278 [INFO] - Watching for file changes with StatReloader
+2023-12-12 23:52:33,545 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-12 23:52:38,244 [INFO] - Watching for file changes with StatReloader
+2023-12-12 23:54:23,704 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-12 23:54:27,783 [INFO] - Watching for file changes with StatReloader
+2023-12-12 23:54:42,304 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py changed, reloading.
+2023-12-12 23:54:48,873 [INFO] - Watching for file changes with StatReloader
+2023-12-12 23:55:06,849 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py changed, reloading.
+2023-12-12 23:55:14,375 [INFO] - Watching for file changes with StatReloader
+2023-12-12 23:56:12,158 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-12 23:56:15,467 [INFO] - Watching for file changes with StatReloader
+2023-12-12 23:56:27,975 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py changed, reloading.
+2023-12-12 23:56:31,697 [INFO] - Watching for file changes with StatReloader
+2023-12-12 23:57:42,612 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py changed, reloading.
+2023-12-12 23:57:47,418 [INFO] - Watching for file changes with StatReloader
+2023-12-12 23:57:51,086 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py changed, reloading.
+2023-12-12 23:57:54,638 [INFO] - Watching for file changes with StatReloader
+2023-12-12 23:57:59,885 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py changed, reloading.
+2023-12-12 23:58:05,942 [INFO] - Watching for file changes with StatReloader
+2023-12-12 23:58:11,890 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py changed, reloading.
+2023-12-12 23:58:14,672 [INFO] - Watching for file changes with StatReloader
+2023-12-12 23:58:20,452 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py changed, reloading.
+2023-12-12 23:58:24,866 [INFO] - Watching for file changes with StatReloader
+2023-12-12 23:58:43,135 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py changed, reloading.
+2023-12-12 23:58:47,465 [INFO] - Watching for file changes with StatReloader
+2023-12-12 23:58:50,524 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py changed, reloading.
+2023-12-12 23:58:55,191 [INFO] - Watching for file changes with StatReloader
+2023-12-12 23:59:04,878 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py changed, reloading.
+2023-12-12 23:59:08,353 [INFO] - Watching for file changes with StatReloader
+2023-12-12 23:59:12,145 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py changed, reloading.
+2023-12-12 23:59:19,389 [INFO] - Watching for file changes with StatReloader
+2023-12-13 00:00:18,438 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-13 00:00:20,694 [INFO] - Watching for file changes with StatReloader
+2023-12-13 00:00:32,745 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-13 00:00:37,091 [INFO] - Watching for file changes with StatReloader
+2023-12-13 00:00:52,021 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-13 00:00:55,178 [INFO] - Watching for file changes with StatReloader
+2023-12-13 00:14:48,548 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py changed, reloading.
+2023-12-13 00:14:54,333 [INFO] - Watching for file changes with StatReloader
+2023-12-13 00:16:47,750 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py changed, reloading.
+2023-12-13 00:17:00,456 [INFO] - Watching for file changes with StatReloader
+2023-12-13 00:17:14,221 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py changed, reloading.
+2023-12-13 00:17:17,589 [INFO] - Watching for file changes with StatReloader
+2023-12-13 00:19:40,060 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py changed, reloading.
+2023-12-13 00:19:47,509 [INFO] - Watching for file changes with StatReloader
+2023-12-13 00:21:12,701 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py changed, reloading.
+2023-12-13 00:21:16,267 [INFO] - Watching for file changes with StatReloader
+2023-12-13 00:22:41,256 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py changed, reloading.
+2023-12-13 00:22:43,720 [INFO] - Watching for file changes with StatReloader
+2023-12-13 00:26:10,828 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py changed, reloading.
+2023-12-13 00:26:18,805 [INFO] - Watching for file changes with StatReloader
+2023-12-13 00:34:40,264 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\models.py changed, reloading.
+2023-12-13 00:34:50,333 [INFO] - Watching for file changes with StatReloader
+2023-12-13 00:35:32,775 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\models.py changed, reloading.
+2023-12-13 00:35:35,603 [INFO] - Watching for file changes with StatReloader
+2023-12-13 00:35:57,806 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\models.py changed, reloading.
+2023-12-13 00:36:03,258 [INFO] - Watching for file changes with StatReloader
+2023-12-13 00:36:21,004 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-13 00:36:23,015 [INFO] - Watching for file changes with StatReloader
+2023-12-13 00:37:35,131 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-13 00:37:40,095 [INFO] - Watching for file changes with StatReloader
+2023-12-13 00:40:55,317 [INFO] - Watching for file changes with StatReloader
+2023-12-13 00:43:45,392 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-13 00:43:51,457 [INFO] - Watching for file changes with StatReloader
+2023-12-13 00:45:54,457 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-13 00:45:58,926 [INFO] - Watching for file changes with StatReloader
+2023-12-13 00:46:17,203 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-13 00:46:20,294 [INFO] - Watching for file changes with StatReloader
+2023-12-13 00:48:40,384 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py changed, reloading.
+2023-12-13 00:48:43,884 [INFO] - Watching for file changes with StatReloader
+2023-12-13 00:50:22,761 [ERROR] - Internal Server Error: /core/register/
+Traceback (most recent call last):
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py", line 48, in register
+    return render(request, 'crear_cuenta.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '[field.name]' from 'formIcons[field.name]'
+2023-12-13 00:51:14,439 [ERROR] - Internal Server Error: /core/register/
+Traceback (most recent call last):
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py", line 48, in register
+    return render(request, 'crear_cuenta.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\defaulttags.py", line 1482, in do_with
+    extra_context = token_kwargs(remaining_bits, parser, support_legacy=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\base.py", line 1116, in token_kwargs
+    kwargs[key] = parser.compile_filter(value)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'get'
+2023-12-13 00:54:12,578 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-13 00:54:22,502 [INFO] - Watching for file changes with StatReloader
+2023-12-13 00:55:36,994 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py changed, reloading.
+2023-12-13 00:55:41,264 [INFO] - Watching for file changes with StatReloader
+2023-12-13 00:56:32,581 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-13 00:56:42,144 [INFO] - Watching for file changes with StatReloader
+2023-12-13 00:57:41,169 [INFO] - Watching for file changes with StatReloader
+2023-12-13 00:58:11,950 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-13 00:58:16,966 [INFO] - Watching for file changes with StatReloader
+2023-12-13 00:58:35,039 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py changed, reloading.
+2023-12-13 00:58:37,911 [INFO] - Watching for file changes with StatReloader
+2023-12-13 01:00:02,941 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-13 01:00:07,021 [INFO] - Watching for file changes with StatReloader
+2023-12-13 01:00:22,145 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py changed, reloading.
+2023-12-13 01:00:26,694 [INFO] - Watching for file changes with StatReloader
+2023-12-13 01:01:35,975 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py changed, reloading.
+2023-12-13 01:01:41,299 [INFO] - Watching for file changes with StatReloader
+2023-12-13 01:03:13,413 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py changed, reloading.
+2023-12-13 01:03:20,327 [INFO] - Watching for file changes with StatReloader
+2023-12-13 01:03:30,771 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-13 01:03:33,267 [INFO] - Watching for file changes with StatReloader
+2023-12-13 01:04:45,781 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-13 01:04:50,171 [INFO] - Watching for file changes with StatReloader
+2023-12-13 01:05:59,453 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-13 01:06:03,141 [INFO] - Watching for file changes with StatReloader
+2023-12-13 01:06:16,388 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-13 01:06:18,032 [INFO] - Watching for file changes with StatReloader
+2023-12-13 01:06:23,605 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-13 01:06:27,420 [INFO] - Watching for file changes with StatReloader
+2023-12-13 01:06:35,412 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-13 01:06:37,168 [INFO] - Watching for file changes with StatReloader
+2023-12-13 01:06:44,738 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-13 01:06:47,185 [INFO] - Watching for file changes with StatReloader
+2023-12-13 01:07:35,837 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-13 01:07:39,291 [INFO] - Watching for file changes with StatReloader
+2023-12-13 01:07:44,381 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-13 01:07:47,221 [INFO] - Watching for file changes with StatReloader
+2023-12-13 01:07:51,779 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-13 01:07:55,368 [INFO] - Watching for file changes with StatReloader
+2023-12-13 01:08:33,137 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py changed, reloading.
+2023-12-13 01:08:42,360 [INFO] - Watching for file changes with StatReloader
+2023-12-13 01:11:40,121 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\models.py changed, reloading.
+2023-12-13 01:11:44,326 [INFO] - Watching for file changes with StatReloader
+2023-12-13 01:12:26,876 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\models.py changed, reloading.
+2023-12-13 01:12:29,170 [INFO] - Watching for file changes with StatReloader
+2023-12-13 01:12:35,525 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-13 01:12:41,352 [INFO] - Watching for file changes with StatReloader
+2023-12-13 01:12:45,353 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-13 01:12:50,414 [INFO] - Watching for file changes with StatReloader
+2023-12-13 01:22:15,364 [INFO] - Watching for file changes with StatReloader
+2023-12-13 01:22:22,596 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py changed, reloading.
+2023-12-13 01:22:27,023 [INFO] - Watching for file changes with StatReloader
+2023-12-13 01:22:28,105 [ERROR] - Internal Server Error: /core/register/
+Traceback (most recent call last):
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py", line 30, in register
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\forms\forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\forms\forms.py", line 445, in _clean_fields
+    value = field.clean(value)
+            ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\forms\fields.py", line 200, in clean
+    self.run_validators(value)
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\forms\fields.py", line 185, in run_validators
+    v(value)
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\core\validators.py", line 366, in __call__
+    cleaned = self.clean(value)
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\core\validators.py", line 432, in clean
+    return len(x)
+           ^^^^^^
+TypeError: object of type 'int' has no len()
+2023-12-13 01:25:35,788 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\models.py changed, reloading.
+2023-12-13 01:25:47,243 [INFO] - Watching for file changes with StatReloader
+2023-12-13 01:25:53,350 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-13 01:25:57,079 [INFO] - Watching for file changes with StatReloader
+2023-12-13 01:26:05,731 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-13 01:26:10,039 [INFO] - Watching for file changes with StatReloader
+2023-12-13 01:26:41,298 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-13 01:26:45,006 [INFO] - Watching for file changes with StatReloader
+2023-12-13 01:26:47,904 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-13 01:26:49,355 [INFO] - Watching for file changes with StatReloader
+2023-12-13 01:27:07,247 [INFO] - Watching for file changes with StatReloader
+2023-12-13 01:29:38,833 [ERROR] - Internal Server Error: /core/register/
+Traceback (most recent call last):
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\MySQLdb\connections.py", line 255, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1062, "Duplicate entry '' for key 'username'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py", line 31, in register
+    form.save()
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py", line 47, in save
+    user.save()
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 76, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\MySQLdb\connections.py", line 255, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry '' for key 'username'")
+2023-12-13 01:30:52,830 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-13 01:31:04,215 [INFO] - Watching for file changes with StatReloader
+2023-12-13 01:32:32,978 [ERROR] - Internal Server Error: /core/create_task/
+Traceback (most recent call last):
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py", line 202, in create_task
+    if fecha_entrega and fecha_entrega < timezone.now().date():
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: can't compare datetime.datetime to datetime.date
+2023-12-13 01:33:54,400 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\views.py changed, reloading.
+2023-12-13 01:34:02,892 [INFO] - Watching for file changes with StatReloader
+2023-12-13 01:41:37,396 [INFO] - C:\Users\Andres\OneDrive\Escritorio\djangoproject\core\forms.py changed, reloading.
+2023-12-13 01:41:47,702 [INFO] - Watching for file changes with StatReloader
